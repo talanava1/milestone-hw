@@ -19,22 +19,6 @@ html, body{
     width: 10%;
 }
 
-.title{
-    margin-top: 3%;
-}
-
-.header, .input{
-    padding: 5%;
-}
-
-.input-tab{
-    margin-top: -3%;
-}
-
-.input{
-    margin-top: -10%;
-}
-
 .button{
     background-color: blue;
     color: white;
@@ -46,6 +30,12 @@ html, body{
 .button:hover{
     cursor: pointer;
 }
+
+
+
+
+
+
 
 
   

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fibonacci Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link ref="stylesheet" href="./Fibonacci milestone 5.css"/>
   </head>
 
     
@@ -12,33 +13,37 @@
     <body>
   <div class="my-5 mx-5 px-4 py-4">
     <h1 class="display-2 my-3 mx-2">Fibonacci Calculator</h1>
-    <div class="d-flex flex-row align-items-center">
-        <div class="fs-4 my-5 mx-2" id="first-output">The Fibonacci Of</div>
-        <div class="mx-2">
-            <input class="form-control" size="2" type="text" name="The Fibonacci Of" placeholder="#" id="fib"/>
-        </div>
-        <button id="mybtn" class="mx-2 btn btn-primary" onclick="showResult()">Is</button>
-       <span id="input" class="mx-2 text-decoration-underline" ></span>
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-
+    <div class="d-flex flex-row align-items-center mt-5 mb-1 ">
+      <div class="fs-4 mx-2" id="first-output">The Fibonacci Of</div>
+      <div class="mx-2">
+          <input class="form-control" size="4" type="text" name="The Fibonacci Of" placeholder="#" id="fib" onClick="resetInput()"/>
+      </div>
+      <button id="mybtn" class="mx-2 btn btn-primary" onclick="showResult()">Is</button>
+      <span id="input" class="mx-2 text-decoration-underline" ></span>
+      <div id="loading-container" class="visually-hidden">
+        <div class="spinner-border spinner-grow-md" role="status"></div>
+      <span class="visually-hidden">Loading...</span>
+      </div>
     </div>
-    <div class="display-5 mx-2 mt-2">
+    <div class="imagelift">
+      <img class="ms-5 ps-5 err-img visually-hidden" id="err-img" src="./err.svg" alt="error"/>
+    </div>
+    <div class="visually-hidden">
+      <div class="display-5 mx-2 mt-2">
         Results
-    </div>
-    </div>
-    <div class="mt-5 mx-2 ms-5 ps-4">
+      </div>
+      <div class="mt-5 mx-2 ms-5 ps-4">
         <p class="pb-2 border-bottom border-dark">Testing</p><br>
         <p class="pb-2 border-bottom border-dark">Testing</p><br>
         <p class="pb-2 border-bottom border-dark">Testing</p><br>
+      </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </body>
 
-<script src="./Fibonacci copy 3.js"></script>
+<script src="./Fibonacci milestone 5.js"></script>
 </html>
