@@ -16,6 +16,7 @@ function greaterThan50(){
   console.log('greater ran')
   input.setAttribute('class', 'text-danger border border-danger')
   errImg.removeAttribute('class', 'visually-hidden')
+  errImg.setAttribute('class', 'ms-5 ps-5')
 }
 
 function resetInput(){
