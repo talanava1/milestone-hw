@@ -19,8 +19,10 @@ function hideLoading(){
 //  declaring the handlers 
 function is42Handler(){ 
   hideLoading();
-  output.setAttribute('class', 'text-danger')
+  if (input.value= 42) {
+  output.setAttribute('class', 'text-danger')}
   is42 = true;
+ 
 }
 
 // if input.value is > 50 show error
@@ -33,7 +35,11 @@ function greaterThan50(){
 }
 
 function resetForm(){
+  // set value to empty string
+  output.textContent = ''
   input.removeAttribute('class', 'text-dark border border-danger')
+  output.removeAttribute(`class`, `text-danger`)
+  output.setAttribute(`class`, `text-decoration-underline`)
   errImg.setAttribute('class', 'visually-hidden')
   is42 = false;
 }
@@ -53,8 +59,6 @@ function showResult(){
     greaterThan50();
   }
 
-  // set value to empty string
-  output.textContent = ''
   showLoading();
 
 
